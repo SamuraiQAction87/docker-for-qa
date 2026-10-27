@@ -5,7 +5,7 @@
 Este repositório contém os arquivos e instruções práticas desenvolvidos durante o treinamento de **Docker focado em Quality Assurance**. O objetivo do projeto é demonstrar como empacotar uma aplicação web (Parodify) utilizando o Nginx, abordando desde a criação de imagens customizadas via `Dockerfile` até o mapeamento seguro de volumes e portas em ambiente Linux.
 
 ---
-
+#
 ## 📂 Estrutura do Repositório
 
 ```text
@@ -16,6 +16,7 @@ docker-for-qa/
 └── README.md       # Documentação do projeto
 ```
 
+#
 ## 🛠️ Pré-requisitos (Ambiente Linux)
 Antes de iniciar, certifique-se de que o Docker Engine e o Git estejam instalados no seu ambiente (Ubuntu / Zorin OS / Debian).
 
@@ -37,6 +38,8 @@ sudo usermod -aG docker $USER
 ```
 > **Nota:** Após executar o comando acima, reinicie a sessão ou a máquina para aplicar as permissões do grupo.
 
+
+#
 ## 🚀 Como Clonar e Executar a Aplicação
 1. Clonar o repositório
 ```
@@ -62,6 +65,7 @@ Caso queira refletir alterações no código local em tempo real no contêiner:
 docker run -d --name parodify-dev -p 127.0.0.1:8080:80 -v $(pwd)/app:/usr/share/nginx/html nginx
 ```
 
+#
 ## 🌐 Acessando a Aplicação
 Com o contêiner em execução, abra o seu navegador no Linux e acesse:
 
@@ -69,6 +73,7 @@ Modo Imagem Customizada: http://127.0.0.1:8081
 
 Modo Bind Mount: http://127.0.0.1:8080
 
+#
 ## 🔒 Boas Práticas de Infraestrutura Aplicadas
 Segurança de Rede: Utilização do mapeamento explícito 127.0.0.1:PORTA:80 para garantir que o contêiner fique acessível exclusivamente na interface de loopback local, prevenindo a exposição indevida das portas em interfaces de rede públicas (0.0.0.0).
 
