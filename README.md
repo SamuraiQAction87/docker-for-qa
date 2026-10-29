@@ -69,9 +69,9 @@ docker run -d --name parodify-dev -p 127.0.0.1:8080:80 -v $(pwd)/app:/usr/share/
 ## 🌐 Acessando a Aplicação
 Com o contêiner em execução, abra o seu navegador no Linux e acesse:
 
-Modo Imagem Customizada: http://127.0.0.1:8081
+Modo **Imagem Customizada**: http://127.0.0.1:8081
 
-Modo Bind Mount: http://127.0.0.1:8080
+Modo **Bind Mount**: http://127.0.0.1:8080
 
 #
 ## 🔒 Boas Práticas de Infraestrutura Aplicadas
