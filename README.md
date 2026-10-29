@@ -75,8 +75,8 @@ Modo Bind Mount: http://127.0.0.1:8080
 
 #
 ## 🔒 Boas Práticas de Infraestrutura Aplicadas
-Segurança de Rede: Utilização do mapeamento explícito 127.0.0.1:PORTA:80 para garantir que o contêiner fique acessível exclusivamente na interface de loopback local, prevenindo a exposição indevida das portas em interfaces de rede públicas (0.0.0.0).
+**Segurança de Rede:** Utilização do mapeamento explícito 127.0.0.1:PORTA:80 para garantir que o contêiner fique acessível exclusivamente na interface de loopback local, prevenindo a exposição indevida das portas em interfaces de rede públicas (0.0.0.0).
 
-Imutabilidade do Ambiente: Garantia de que a aplicação se comporte de forma padronizada em qualquer máquina que execute a imagem criada.
+**Imutabilidade do Ambiente:** Garantia de que a aplicação se comporte de forma padronizada em qualquer máquina que execute a imagem criada.
 
 
